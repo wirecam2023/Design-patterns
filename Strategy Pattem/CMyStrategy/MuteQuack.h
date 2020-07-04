@@ -7,6 +7,6 @@ public:
 	CMuteQuack(void);
 	virtual ~CMuteQuack(void);
 public:
-	virtual void Quack();
+	virtual void quack();
 };
 

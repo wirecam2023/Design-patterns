@@ -17,12 +17,12 @@ CMiniDuckSimulator::~CMiniDuckSimulator(void)
 
 void CMiniDuckSimulator::Test()
 {
-	CDuck* mallard = new CMallardDuck;
+	CDuck* mallard = new CMallardDuck;  //ÂÌÍ·Ñ¼
 	mallard->PerformQuack();
 	mallard->PerformFly();
 
 	//
-	CDuck *pModel = new CModelDuck;
+	CDuck *pModel = new CModelDuck;  //Ä£ÐÍÑ¼
 	pModel->PerformFly();
 	pModel->SetFlyBehavior(new CFlyRocketPowered);
 	pModel->PerformFly();

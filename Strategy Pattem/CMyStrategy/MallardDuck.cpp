@@ -7,8 +7,8 @@
 
 CMallardDuck::CMallardDuck(void)
 {
-	m_pQuackBehavior = new CQuack;
-	m_pFlyBehavior = new CFlyWithWings;
+	m_pQuackBehavior = new CQuack;    //ßÉßÉ½Ð
+	m_pFlyBehavior = new CFlyWithWings;//»á·É
 }
 
 
@@ -22,13 +22,3 @@ void CMallardDuck::Display()
 
 }
 
-//void CMallardDuck::PerformQuack()
-//{
-//	AfxMessageBox(_T("ÂÌÍ·Ñ¼ßÉßÉ½Ð!"), MB_OK);
-//
-//}
-//
-//void CMallardDuck::PerformFly()
-//{
-//	AfxMessageBox(_T("ÂÌÍ·Ñ¼ÕýÔÚ·É!"), MB_OK);
-//}

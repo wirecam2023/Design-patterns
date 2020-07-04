@@ -11,7 +11,3 @@ CFlyBehavior::~CFlyBehavior(void)
 {
 }
 
-void CFlyBehavior::Fly()
-{
-
-}

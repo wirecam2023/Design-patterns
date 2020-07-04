@@ -12,7 +12,3 @@ CQuackBehavior::~CQuackBehavior(void)
 {
 }
 
-void CQuackBehavior::quack()
-{
-	AfxMessageBox(_T("Quack"), MB_OK);
-}

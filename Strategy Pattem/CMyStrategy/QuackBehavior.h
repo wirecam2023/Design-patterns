@@ -5,6 +5,6 @@ public:
 	CQuackBehavior(void);
 	~CQuackBehavior(void);
 public:
-	virtual void quack();
+	virtual void quack() = 0;
 };
 

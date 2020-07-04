@@ -7,7 +7,5 @@ public:
 	virtual ~CMallardDuck(void);
 public:
 	void Display();
-	//virtual void PerformQuack();
-	//virtual void PerformFly();
 };
 

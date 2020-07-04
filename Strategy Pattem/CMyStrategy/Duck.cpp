@@ -25,7 +25,6 @@ void CDuck::SetQuackBehavior(CQuackBehavior* pQb)
 
 void CDuck::PerformQuack()
 {
-	//AfxMessageBox(_T("Duck Quack!"), MB_OK);
 	m_pQuackBehavior->quack();
 }
 

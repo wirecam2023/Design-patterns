@@ -2,12 +2,13 @@
 #include "ModelDuck.h"
 #include "Quack.h"
 #include "FlyNoWay.h"
+#include "MuteQuack.h"
 
 
 CModelDuck::CModelDuck(void)
 {
-	m_pFlyBehavior = new CFlyNoWay;
-	m_pQuackBehavior = new CQuack;
+	m_pFlyBehavior = new CFlyNoWay;  //不会飞
+	m_pQuackBehavior = new CMuteQuack;  //不会叫
 }
 
 
