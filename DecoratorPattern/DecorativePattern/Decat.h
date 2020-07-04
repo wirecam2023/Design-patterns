@@ -1,5 +1,7 @@
 #pragma once
 #include "beverage.h"
+
+//µÍ¿§·ÈÒòÒûÁÏ
 class CDecat :
 	public CBeverage
 {

@@ -9,6 +9,6 @@ public:
 	CCondimentDecorator(void);
 	virtual ~CCondimentDecorator(void);
 public:
-	virtual CString GetDescription() = 0;
+	virtual CString GetDescription() const = 0;
 };
 

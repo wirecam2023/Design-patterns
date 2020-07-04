@@ -4,6 +4,7 @@
 
 CHouseBlend::CHouseBlend(void)
 {
+	m_strDescription = _T("HouseBlend×ÛºÏ¿§·ÈÒûÁÏ");
 }
 
 

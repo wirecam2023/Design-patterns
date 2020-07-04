@@ -4,6 +4,7 @@
 
 CDarkRoast::CDarkRoast(void)
 {
+	m_strDescription = _T("DarkRoast…Ó±∫øß∑»");
 }
 
 

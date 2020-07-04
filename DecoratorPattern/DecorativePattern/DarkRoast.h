@@ -1,5 +1,7 @@
 #pragma once
 #include "beverage.h"
+
+//…Ó±∫øß∑»
 class CDarkRoast :
 	public CBeverage
 {

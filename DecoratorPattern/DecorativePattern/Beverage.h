@@ -9,19 +9,19 @@ public:
 	void Init();
 public:
 	virtual double cost() = 0;
-	CString GetDescription() const;
+	virtual CString GetDescription() const;
 protected:
 	CString m_strDescription;
 };
 
 /*
---咖啡价格  
+--咖啡饮料价格--  
 综合 0.89
 深焙 0.99
 低咖啡因 1.05
 浓缩  1.00
 
---调料价格 
+--调料价格-- 
 牛奶 0.10
 摩卡 0.2
 豆浆 0.15

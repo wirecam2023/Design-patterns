@@ -6,6 +6,7 @@
 #include "DecorativePattern.h"
 #include "DecorativePatternDlg.h"
 #include "afxdialogex.h"
+#include "StartbuzzCoffee.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -62,6 +63,7 @@ BEGIN_MESSAGE_MAP(CDecorativePatternDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_BUTTON_TEST, &CDecorativePatternDlg::OnBnClickedButtonTest)
 END_MESSAGE_MAP()
 
 
@@ -150,3 +152,11 @@ HCURSOR CDecorativePatternDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CDecorativePatternDlg::OnBnClickedButtonTest()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	CStartbuzzCoffee coffee;
+	coffee.Main();
+}

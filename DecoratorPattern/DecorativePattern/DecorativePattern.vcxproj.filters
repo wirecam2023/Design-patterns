@@ -16,6 +16,12 @@
     <Filter Include="Beverage">
       <UniqueIdentifier>{61564de7-9c33-4d3e-b894-eaeacfd65b10}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Condiment">
+      <UniqueIdentifier>{df9aa9c9-ecb7-4d12-8b82-ef382d9bad61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{f030daec-94b5-4fd9-9de8-89af02e4dc5c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -54,6 +60,21 @@
     <ClInclude Include="Decat.h">
       <Filter>Beverage</Filter>
     </ClInclude>
+    <ClInclude Include="Mocha.h">
+      <Filter>Condiment</Filter>
+    </ClInclude>
+    <ClInclude Include="Milk.h">
+      <Filter>Condiment</Filter>
+    </ClInclude>
+    <ClInclude Include="Soy.h">
+      <Filter>Condiment</Filter>
+    </ClInclude>
+    <ClInclude Include="Whip.h">
+      <Filter>Condiment</Filter>
+    </ClInclude>
+    <ClInclude Include="StartbuzzCoffee.h">
+      <Filter>Main</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DecorativePattern.cpp">
@@ -82,6 +103,21 @@
     </ClCompile>
     <ClCompile Include="Decat.cpp">
       <Filter>Beverage</Filter>
+    </ClCompile>
+    <ClCompile Include="Mocha.cpp">
+      <Filter>Condiment</Filter>
+    </ClCompile>
+    <ClCompile Include="Milk.cpp">
+      <Filter>Condiment</Filter>
+    </ClCompile>
+    <ClCompile Include="Soy.cpp">
+      <Filter>Condiment</Filter>
+    </ClCompile>
+    <ClCompile Include="Whip.cpp">
+      <Filter>Condiment</Filter>
+    </ClCompile>
+    <ClCompile Include="StartbuzzCoffee.cpp">
+      <Filter>Main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

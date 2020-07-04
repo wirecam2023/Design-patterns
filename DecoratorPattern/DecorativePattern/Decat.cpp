@@ -4,6 +4,7 @@
 
 CDecat::CDecat(void)
 {
+	m_strDescription = _T("Decatตอฟงทศา๒า๛มฯ");
 }
 
 
