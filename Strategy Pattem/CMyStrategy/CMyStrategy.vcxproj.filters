@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fly">
+      <UniqueIdentifier>{8f21ea69-cac2-4fee-8787-bf185ef47911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quack">
+      <UniqueIdentifier>{4ec40ccd-4a3b-4c09-b7b9-0d05891607bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Duck">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Strategy">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CMyStrategy.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="CMyStrategyDlg.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyBehavior.h">
+      <Filter>Fly</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyNoWay.h">
+      <Filter>Fly</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyWithWings.h">
+      <Filter>Fly</Filter>
+    </ClInclude>
+    <ClInclude Include="Quack.h">
+      <Filter>Quack</Filter>
+    </ClInclude>
+    <ClInclude Include="QuackBehavior.h">
+      <Filter>Quack</Filter>
+    </ClInclude>
+    <ClInclude Include="Squeak.h">
+      <Filter>Quack</Filter>
+    </ClInclude>
+    <ClInclude Include="Duck.h">
+      <Filter>Duck</Filter>
+    </ClInclude>
+    <ClInclude Include="MallardDuck.h">
+      <Filter>Duck</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniDuckSimulator.h">
+      <Filter>Duck</Filter>
+    </ClInclude>
+    <ClInclude Include="MuteQuack.h">
+      <Filter>Quack</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelDuck.h">
+      <Filter>Duck</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyRocketPowered.h">
+      <Filter>Strategy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Duck.cpp">
+      <Filter>Duck</Filter>
+    </ClCompile>
+    <ClCompile Include="MallardDuck.cpp">
+      <Filter>Duck</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniDuckSimulator.cpp">
+      <Filter>Duck</Filter>
+    </ClCompile>
+    <ClCompile Include="FlyWithWings.cpp">
+      <Filter>Fly</Filter>
+    </ClCompile>
+    <ClCompile Include="FlyNoWay.cpp">
+      <Filter>Fly</Filter>
+    </ClCompile>
+    <ClCompile Include="FlyBehavior.cpp">
+      <Filter>Fly</Filter>
+    </ClCompile>
+    <ClCompile Include="Quack.cpp">
+      <Filter>Quack</Filter>
+    </ClCompile>
+    <ClCompile Include="QuackBehavior.cpp">
+      <Filter>Quack</Filter>
+    </ClCompile>
+    <ClCompile Include="Squeak.cpp">
+      <Filter>Quack</Filter>
+    </ClCompile>
+    <ClCompile Include="CMyStrategyDlg.cpp">
+      <Filter>Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="CMyStrategy.cpp">
+      <Filter>Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="MuteQuack.cpp">
+      <Filter>Quack</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelDuck.cpp">
+      <Filter>Duck</Filter>
+    </ClCompile>
+    <ClCompile Include="FlyRocketPowered.cpp">
+      <Filter>Duck</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CMyStrategy.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CMyStrategy.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CMyStrategy.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
