@@ -1,17 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Dlg">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="PizzaType">
+      <UniqueIdentifier>{6d185c2d-0a95-451d-8196-6fa0c01357f6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -19,30 +22,72 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SimpleFactory.h">
-      <Filter>头文件</Filter>
+      <Filter>Dlg</Filter>
     </ClInclude>
     <ClInclude Include="SimpleFactoryDlg.h">
-      <Filter>头文件</Filter>
+      <Filter>Dlg</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
-      <Filter>头文件</Filter>
+      <Filter>Dlg</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>头文件</Filter>
+      <Filter>Dlg</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
-      <Filter>头文件</Filter>
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SimplePizzaFactory.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="PizzaStore.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="CheesePizza.h">
+      <Filter>PizzaType</Filter>
+    </ClInclude>
+    <ClInclude Include="ClamPizza.h">
+      <Filter>PizzaType</Filter>
+    </ClInclude>
+    <ClInclude Include="PepperoniPizza.h">
+      <Filter>PizzaType</Filter>
+    </ClInclude>
+    <ClInclude Include="VeggiePizza.h">
+      <Filter>PizzaType</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SimpleFactory.cpp">
-      <Filter>源文件</Filter>
+      <Filter>Dlg</Filter>
     </ClCompile>
     <ClCompile Include="SimpleFactoryDlg.cpp">
-      <Filter>源文件</Filter>
+      <Filter>Dlg</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
-      <Filter>源文件</Filter>
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="SimplePizzaFactory.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Pizza.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="PizzaStore.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="CheesePizza.cpp">
+      <Filter>PizzaType</Filter>
+    </ClCompile>
+    <ClCompile Include="ClamPizza.cpp">
+      <Filter>PizzaType</Filter>
+    </ClCompile>
+    <ClCompile Include="PepperoniPizza.cpp">
+      <Filter>PizzaType</Filter>
+    </ClCompile>
+    <ClCompile Include="VeggiePizza.cpp">
+      <Filter>PizzaType</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

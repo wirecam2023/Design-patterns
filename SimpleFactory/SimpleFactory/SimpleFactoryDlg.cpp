@@ -6,6 +6,8 @@
 #include "SimpleFactory.h"
 #include "SimpleFactoryDlg.h"
 #include "afxdialogex.h"
+#include "PizzaStore.h"
+#include "SimplePizzaFactory.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -62,6 +64,7 @@ BEGIN_MESSAGE_MAP(CSimpleFactoryDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_BUTTON_TEST, &CSimpleFactoryDlg::OnBnClickedButtonTest)
 END_MESSAGE_MAP()
 
 
@@ -150,3 +153,22 @@ HCURSOR CSimpleFactoryDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CSimpleFactoryDlg::OnBnClickedButtonTest()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	CSimplePizzaFactory* m_pFactor =new CSimplePizzaFactory;
+	CPizzaStore pizzaStore(m_pFactor);
+	pizzaStore.OrderPizza(_T("cheese"));
+
+	delete m_pFactor;
+}
+/*   披萨种类
+
+_T("cheese")
+_T("pepperoni")
+_T("clam")
+_T("veggie")
+
+*/

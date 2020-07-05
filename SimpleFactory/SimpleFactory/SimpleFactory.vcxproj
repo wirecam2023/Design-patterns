@@ -101,19 +101,33 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CheesePizza.h" />
+    <ClInclude Include="ClamPizza.h" />
+    <ClInclude Include="PepperoniPizza.h" />
+    <ClInclude Include="Pizza.h" />
+    <ClInclude Include="PizzaStore.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SimpleFactory.h" />
     <ClInclude Include="SimpleFactoryDlg.h" />
+    <ClInclude Include="SimplePizzaFactory.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="VeggiePizza.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CheesePizza.cpp" />
+    <ClCompile Include="ClamPizza.cpp" />
+    <ClCompile Include="PepperoniPizza.cpp" />
+    <ClCompile Include="Pizza.cpp" />
+    <ClCompile Include="PizzaStore.cpp" />
     <ClCompile Include="SimpleFactory.cpp" />
     <ClCompile Include="SimpleFactoryDlg.cpp" />
+    <ClCompile Include="SimplePizzaFactory.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="VeggiePizza.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SimpleFactory.rc" />
@@ -127,4 +141,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="SimpleFactory.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
