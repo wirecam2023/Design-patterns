@@ -3,9 +3,8 @@
 #include "Pizza.h"
 #include "PizzaFactory.h"
 
-CPizzaStore::CPizzaStore(CPizzaFactory* pFactory)
+CPizzaStore::CPizzaStore()
 {
-	m_pFactory = pFactory;
 }
 
 
@@ -17,7 +16,8 @@ CPizzaStore::~CPizzaStore(void)
 CPizza* CPizzaStore::OrderPizza(const CString& strType)
 {
 	CPizza* pPizza = nullptr;
-	pPizza = m_pFactory->CreatePizza(strType);
+
+	pPizza = CreatePizza(strType);
 
 	pPizza->Prepare();
 	pPizza->Bake();

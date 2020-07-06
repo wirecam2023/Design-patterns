@@ -6,6 +6,11 @@
 #include "Factory.h"
 #include "FactoryDlg.h"
 #include "afxdialogex.h"
+#include "PizzaStore.h"
+#include <memory>
+#include "NYStylePizzaStore.h"
+#include "ChicagoStylePizzaStore.h"
+#include "Pizza.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -62,6 +67,7 @@ BEGIN_MESSAGE_MAP(CFactoryDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_BUTTON_TEST, &CFactoryDlg::OnBnClickedButtonTest)
 END_MESSAGE_MAP()
 
 
@@ -150,3 +156,20 @@ HCURSOR CFactoryDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+void CFactoryDlg::OnBnClickedButtonTest()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	CPizzaStore* pNYStore      = new CNYStylePizzaStore();
+	CPizzaStore* pChicagoStore = new CChicagoStylePizzaStore();
+
+	CPizza* pPizza = pNYStore->OrderPizza(_T("cheese"));
+	CString str = _T("Ethan ordered a ") + pPizza->GetName();
+	AfxMessageBox(str, MB_OK);
+
+	pPizza = pChicagoStore->OrderPizza(_T("cheese"));
+	str = _T("Joel ordered a ") + pPizza->GetName();
+	AfxMessageBox(str, MB_OK);
+
+	delete pNYStore     ;
+	delete pChicagoStore;
+}

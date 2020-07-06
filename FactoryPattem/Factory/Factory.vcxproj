@@ -102,23 +102,42 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CheesePizza.h" />
+    <ClInclude Include="ChicagoStyleCheesePizza.h" />
+    <ClInclude Include="ChicagoStyleClamPizza.h" />
+    <ClInclude Include="ChicagoStylePepperoniPizza.h" />
+    <ClInclude Include="ChicagoStylePizzaStore.h" />
+    <ClInclude Include="ChicagoStyleVeggiePizza.h" />
     <ClInclude Include="ClamPizza.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="FactoryDlg.h" />
+    <ClInclude Include="NYStylePizzaStore.h" />
+    <ClInclude Include="NYStyleCheesePizza.h" />
+    <ClInclude Include="NYStylePepperoniPizza.h" />
+    <ClInclude Include="NYStyleVeggiePizza.h" />
     <ClInclude Include="PepperoniPizza.h" />
     <ClInclude Include="Pizza.h" />
     <ClInclude Include="PizzaStore.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="PizzaFactory.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="NYStyleClamPizza.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="VeggiePizza.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CheesePizza.cpp" />
+    <ClCompile Include="ChicagoStyleCheesePizza.cpp" />
+    <ClCompile Include="ChicagoStyleClamPizza.cpp" />
+    <ClCompile Include="ChicagoStylePepperoniPizza.cpp" />
+    <ClCompile Include="ChicagoStylePizzaStore.cpp" />
+    <ClCompile Include="ChicagoStyleVeggiePizza.cpp" />
     <ClCompile Include="ClamPizza.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="FactoryDlg.cpp" />
+    <ClCompile Include="NYStylePizzaStore.cpp" />
+    <ClCompile Include="NYStyleCheesePizza.cpp" />
+    <ClCompile Include="NYStylePepperoniPizza.cpp" />
+    <ClCompile Include="NYStyleVeggiePizza.cpp" />
     <ClCompile Include="PepperoniPizza.cpp" />
     <ClCompile Include="Pizza.cpp" />
     <ClCompile Include="PizzaStore.cpp" />
@@ -127,6 +146,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="NYStyleClamPizza.cpp" />
     <ClCompile Include="VeggiePizza.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -141,4 +161,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Factory.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
